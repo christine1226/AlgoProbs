@@ -18,4 +18,15 @@ function vowels(str) {
   return total
 }
 
+//iterative solution
+function vowels(str){
+  const matches = str.match(/[aeiou]/gi)
+  return matches ? matches.length:0
+}
+
+//match checks to see if our string include anything in the
+//brakets. g states that the iteration continues even if we
+//have found a match. i takes care of case sensitive items
+//match returns an array of matches
+
 module.exports = vowels;
